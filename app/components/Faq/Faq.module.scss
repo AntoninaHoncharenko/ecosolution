@@ -1,0 +1,83 @@
+@import "/app/variables.scss";
+
+.list {
+  margin-bottom: 36px;
+}
+
+.card {
+  padding: 16px 0;
+  border-top: 1px solid $accent;
+}
+
+.wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+
+.text {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  margin-left: 24px;
+}
+
+.contact_text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  margin-bottom: 12px;
+}
+
+.contact_btn {
+  display: block;
+  width: 130px;
+  height: 39px;
+  padding: 10px 16px;
+  margin: 0 auto;
+  border-radius: 500px;
+  background-color: $accent;
+  color: #173d33;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  position: relative;
+  transition: 300ms linear;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+    background-color: $main_dark;
+    border-radius: 50%;
+    transition: background-color 300ms linear;
+  }
+
+  &:hover {
+    background-color: $main_dark;
+    color: $accent;
+
+    &::after {
+      background-color: $accent;
+    }
+  }
+}

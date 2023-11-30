@@ -9,10 +9,21 @@ import css from "./Header.module.scss";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  });
 
   return (
     <>
-      <header className={css.header}>
+      <header className={`${css.header} ${scroll && css.scrolled}`}>
         <Container className={css.container}>
           <a href="/" className={css.logo}>
             <LogoIcon width={31} height={18} />

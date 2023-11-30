@@ -9,6 +9,10 @@
   border-bottom: 1px solid $accent;
 }
 
+.title {
+  font-size: 36px;
+}
+
 .text {
   text-align: justify;
   font-size: 16px;
@@ -33,6 +37,14 @@
   font-size: 16px;
   line-height: 1.12;
   letter-spacing: -0.64px;
+
+  transition: 300ms linear;
+
+  &:hover {
+    background-color: $main_dark;
+    border: 1px solid $main_dark;
+    color: $accent;
+  }
 }
 
 .icon_wrap {
@@ -41,4 +53,8 @@
   padding: 8px;
   border-radius: 100px;
   background: $accent;
+}
+
+.icon {
+  stroke: $main_dark;
 }

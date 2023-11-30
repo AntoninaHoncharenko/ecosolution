@@ -8,7 +8,9 @@ export const MainSection = () => {
     <section className={css.section}>
       <Container>
         <div className={css.wrap}>
-          <Title isMainTitle>RENEWABLE ENERGY For any task</Title>
+          <Title isMainTitle className={css.title}>
+            RENEWABLE ENERGY For any task
+          </Title>
           <p className={css.text}>
             Development and implementation of renewable non-polluting energy
             sources, generating power generation using energy wind, sun, water,
@@ -17,7 +19,7 @@ export const MainSection = () => {
           <a href="#cases" className={css.button}>
             <p>Learn more</p>
             <div className={css.icon_wrap}>
-              <ArrowIcon width={16} heght={16} />
+              <ArrowIcon width={16} heght={16} className={css.icon}/>
             </div>
           </a>
         </div>

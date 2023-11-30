@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Container } from "../Common/Container/Container";
 import { Title } from "../Common/Title/Title";
 import { ValuesList } from "./ValuesList";
+import { Electricity } from "../Electricity/Electricity";
 import css from "./About.module.scss";
 
 export const About = () => {
@@ -34,6 +35,7 @@ export const About = () => {
           meet the world`s energy needs.
         </p>
         <ValuesList />
+        <Electricity />
       </Container>
     </section>
   );

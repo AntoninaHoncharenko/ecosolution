@@ -1,0 +1,42 @@
+@import "/app/variables.scss";
+
+.title {
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-bottom: 96px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 1px;
+    height: 48px;
+    background-color: $accent;
+  }
+}
+
+.wrap {
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.number {
+  font-family: var(--font-oswald);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.span {
+  font-family: var(--font-oswald);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+}

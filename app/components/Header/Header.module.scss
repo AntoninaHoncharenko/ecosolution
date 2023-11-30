@@ -5,6 +5,11 @@
   padding: 36px 0;
   position: fixed;
   background-color: $background;
+  z-index: 5;
+}
+
+.scrolled {
+  background-color: $white;
 }
 
 .container {
@@ -60,4 +65,9 @@
   border-radius: 500px;
   background-color: $light_green;
   cursor: pointer;
+  transition: background-color 300ms linear;
+
+  &:hover {
+    background-color: $accent;
+  }
 }
