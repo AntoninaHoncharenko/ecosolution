@@ -1,0 +1,9 @@
+@import "/app/variables.scss";
+
+.title {
+  font-family: var(--font-oswald);
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}

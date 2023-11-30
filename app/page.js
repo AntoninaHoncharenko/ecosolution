@@ -1,6 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Header } from "./components/Header/Header";
+import { MainSection } from "./components/Main/Main";
+import { About } from "./components/About/About";
 
 export default function Home() {
-  return <main className={styles.main}>Home</main>;
+  return (
+    <>
+      <Header />
+      <main style={{ paddingTop: "112px" }}>
+        <MainSection />
+        <About />
+      </main>
+    </>
+  );
 }

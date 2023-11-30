@@ -1,0 +1,44 @@
+@import "/app/variables.scss";
+
+.section {
+  padding-top: 110px;
+}
+
+.wrap {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $accent;
+}
+
+.text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 142px;
+  height: 39px;
+  display: flex;
+  padding: 4px 4px 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+
+  border-radius: 500px;
+  border: 1px solid $accent;
+
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+}
+
+.icon_wrap {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 100px;
+  background: $accent;
+}

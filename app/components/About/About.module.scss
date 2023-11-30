@@ -1,0 +1,65 @@
+@import "/app/variables.scss";
+
+.section {
+  padding: 24px 0 36px;
+}
+
+.contacts {
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  text-align: center;
+}
+
+.img_wrap {
+  min-width: 320px;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 58px;
+}
+
+.text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  margin-bottom: 36px;
+}
+
+// values
+
+.value_list {
+  margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 24px;
+}
+
+.value_card {
+  width: 148px;
+  padding: 12px;
+  font-size: 14px;
+  flex-shrink: 0;
+  background-color: $background_grey;
+}
+
+.wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 33px;
+  border-bottom: 1px solid $accent;
+  margin-bottom: 12px;
+}
+
+.value_title {
+  font-family: var(--font-oswald);
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.value_text {
+  text-align: justify;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
