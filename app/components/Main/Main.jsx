@@ -5,7 +5,7 @@ import css from "./Main.module.scss";
 
 export const MainSection = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="main">
       <Container>
         <div className={css.wrap}>
           <Title isMainTitle className={css.title}>
@@ -19,7 +19,7 @@ export const MainSection = () => {
           <a href="#cases" className={css.button}>
             <p>Learn more</p>
             <div className={css.icon_wrap}>
-              <ArrowIcon width={16} heght={16} className={css.icon}/>
+              <ArrowIcon width={16} heght={16} className={css.icon} />
             </div>
           </a>
         </div>

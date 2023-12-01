@@ -3,6 +3,8 @@ import { MainSection } from "./components/Main/Main";
 import { About } from "./components/About/About";
 import { Cases } from "./components/Cases/Cases";
 import { Faq } from "./components/Faq/Faq";
+import { Contacts } from "./components/Contacts/Contacts";
+import { Footer } from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <About />
         <Cases />
         <Faq />
+        <Contacts />
+        <Footer />
       </main>
     </>
   );

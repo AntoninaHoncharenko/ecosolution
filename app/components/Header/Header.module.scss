@@ -18,44 +18,6 @@
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  gap: 4px;
-  align-items: center;
-
-  &:hover {
-    .logo_title {
-      color: $accent;
-    }
-  }
-}
-
-.logo_title {
-  font-family: var(--font-gothic);
-  font-size: 33px;
-  font-weight: 500;
-  letter-spacing: -1.32px;
-  line-height: normal;
-  transition: color 300ms linear;
-}
-
-.logo_text {
-  font-family: var(--font-saygon);
-  font-size: 10px;
-  line-height: 0.9;
-  letter-spacing: -0.4px;
-  width: 60px;
-  margin-top: 5px;
-}
-
-.logo_span {
-  font-family: var(--font-saygon);
-  font-size: 10px;
-  line-height: 0.9;
-  letter-spacing: -0.4px;
-  color: $accent;
-}
-
 .menu_btn {
   width: 40px;
   height: 39px;

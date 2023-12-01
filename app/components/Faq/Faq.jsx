@@ -20,7 +20,7 @@ export const Faq = () => {
   };
 
   return (
-    <section>
+    <section id="faq">
       <Container>
         <Title>Frequently Asked Questions</Title>
         <ul className={css.list}>

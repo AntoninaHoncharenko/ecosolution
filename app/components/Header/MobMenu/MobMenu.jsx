@@ -3,7 +3,7 @@ import CloseIcon from "@/public/icons/close.svg";
 import ArrowIcon from "@/public/icons/arrow-right.svg";
 import InstagramIcon from "@/public/icons/instagram.svg";
 import FacebookIcon from "@/public/icons/facebook.svg";
-import css from "./MonMenu.module.scss";
+import css from "./MobMenu.module.scss";
 
 export const MobMenu = ({ setIsMenuOpen }) => {
   return (
@@ -19,23 +19,23 @@ export const MobMenu = ({ setIsMenuOpen }) => {
         </button>
         <nav className={css.nav}>
           <ul>
-            <li className={css.menu_item}>
+            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
               <p className={css.item_text}>Main</p>
               <ArrowIcon width={16} height={16} className={css.item_icon} />
             </li>
-            <li className={css.menu_item}>
+            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
               <p className={css.item_text}>About</p>
               <ArrowIcon width={16} height={16} className={css.item_icon} />
             </li>
-            <li className={css.menu_item}>
+            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
               <p className={css.item_text}>Cases</p>
               <ArrowIcon width={16} height={16} className={css.item_icon} />
             </li>
-            <li className={css.menu_item}>
+            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
               <p className={css.item_text}>FAQ</p>
               <ArrowIcon width={16} height={16} className={css.item_icon} />
             </li>
-            <li className={css.menu_item}>
+            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
               <p className={css.item_text}>Contact Us</p>
               <ArrowIcon width={16} height={16} className={css.item_icon} />
             </li>

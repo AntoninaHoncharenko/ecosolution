@@ -1,0 +1,113 @@
+@import "/app/variables.scss";
+
+.form {
+  width: 100%;
+  padding: 36px 12px;
+  background-color: $background_grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  margin-bottom: 27px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  margin-bottom: 8px;
+}
+
+.input {
+  height: 31px;
+  padding-bottom: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: $main_dark;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.textarea {
+  height: 147px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $accent;
+  background-color: transparent;
+  resize: none;
+
+  color: $main_dark;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.button {
+  width: 99px;
+  height: 39px;
+  display: flex;
+  padding: 4px 4px 4px 16px;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 500px;
+  border: 1px solid $accent;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+
+  transition: 300ms linear;
+
+  &:hover {
+    background-color: $main_dark;
+    border: 1px solid $main_dark;
+    color: $accent;
+  }
+}
+
+.icon_wrap {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 100px;
+  background: $accent;
+}
+
+.icon {
+  stroke: $main_dark;
+}
+
+.error_text {
+  color: $error;
+  text-align: right;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: -0.48px;
+
+  position: absolute;
+  bottom: -22px;
+  right: 0;
+}

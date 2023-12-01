@@ -1,0 +1,58 @@
+@import "/app/variables.scss";
+
+.footer {
+  padding: 24px 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.up_btn {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border: none;
+  background-color: $accent;
+  border-radius: 100px;
+  transition: background-color 300ms linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $main_dark;
+
+    .up_icon {
+      stroke: $accent;
+    }
+  }
+}
+
+.up_icon {
+  stroke: $main_dark;
+  transform: rotate(-90deg);
+  transition: stroke 300ms linear;
+}
+
+.icon_wrap {
+  display: flex;
+  width: 56px;
+  justify-content: space-between;
+  margin: 0 auto 24px;
+}
+
+.icon {
+  stroke: $main_dark;
+}
+
+.content {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  text-align: center;
+  margin-bottom: 16px;
+}

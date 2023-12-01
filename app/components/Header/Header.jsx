@@ -1,37 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "../Common/Container/Container";
 import { MobMenu } from "./MobMenu/MobMenu";
-import LogoIcon from "@/public/icons/logo.svg";
+import { Logo } from "../Common/Logo/Logo";
 import MenuIcon from "@/public/icons/menu.svg";
+import {
+  scrollToTop,
+  toggleScroll,
+  handleHeaderScroll,
+} from "@/app/helpers/scroll";
 import css from "./Header.module.scss";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
 
-  window.addEventListener("scroll", function () {
-    const scrollPosition = window.scrollY;
+  useEffect(() => {
+    toggleScroll(isMenuOpen);
+  }, [isMenuOpen]);
 
-    if (scrollPosition > 100) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  });
+  useEffect(() => {
+    handleHeaderScroll(setScroll);
+  }, []);
 
   return (
     <>
       <header className={`${css.header} ${scroll && css.scrolled}`}>
         <Container className={css.container}>
-          <a href="/" className={css.logo}>
-            <LogoIcon width={31} height={18} />
-            <p className={css.logo_title}>ecosolution</p>
-            <p className={css.logo_text}>
-              <span className={css.logo_span}>GREEN</span>ERGY FOR LIFE
-            </p>
-          </a>
+          <Logo scrollToTop={scrollToTop} />
           <button
             type="button"
             className={css.menu_btn}
