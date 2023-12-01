@@ -1,6 +1,6 @@
 import { Container } from "../Common/Container/Container";
 import { Title } from "../Common/Title/Title";
-import { ContactForm } from "./Form/ContactForm";
+import { ContactForm } from "../Form/ContactForm";
 import PhoneIcon from "@/public/icons/call.svg";
 import SmsIcon from "@/public/icons/sms.svg";
 import MapIcon from "@/public/icons/map.svg";
