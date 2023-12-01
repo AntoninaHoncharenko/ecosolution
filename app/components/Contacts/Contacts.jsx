@@ -22,11 +22,11 @@ export const Contacts = () => {
               className={css.link}
               style={{ marginBottom: "12px" }}
             >
-              <PhoneIcon width={24} height={24} />
+              <PhoneIcon width={24} height={24} className={css.icon} />
               <p className={css.content}>38 (098) 12 34 567</p>
             </a>
             <a href="tel:380931234567" target="_blank" className={css.link}>
-              <PhoneIcon width={24} height={24} />
+              <PhoneIcon width={24} height={24} className={css.icon} />
               <p className={css.content}>38 (093) 12 34 567</p>
             </a>
           </li>
@@ -37,7 +37,7 @@ export const Contacts = () => {
               target="_blank"
               className={css.link}
             >
-              <SmsIcon width={24} height={24} />
+              <SmsIcon width={24} height={24} className={css.icon} />
               <p className={css.content}>office@ecosolution.com</p>
             </a>
           </li>
@@ -48,7 +48,7 @@ export const Contacts = () => {
               target="_blank"
               className={css.link}
             >
-              <MapIcon width={24} height={24} />
+              <MapIcon width={24} height={24} className={css.icon} />
               <p className={css.content} style={{ width: "212px" }}>
                 79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
               </p>

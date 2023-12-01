@@ -1,0 +1,53 @@
+@import "/app/variables.scss";
+
+.wrap {
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.count {
+  color: rgba(23, 61, 51, 0.25);
+  font-size: 28px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.btn_wrap {
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+
+.button {
+  width: 66px;
+  height: 66px;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid $main_dark;
+  transition: border-color 300ms linear;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $accent;
+
+    .icon {
+      stroke: $accent;
+    }
+  }
+}
+
+.icon {
+  stroke: $main_dark;
+  transition: stroke 300ms linear;
+}
