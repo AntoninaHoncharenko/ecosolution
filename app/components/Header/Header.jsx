@@ -9,6 +9,7 @@ import {
   scrollToTop,
   toggleScroll,
   onWindowScroll,
+  onHeaderChange,
 } from "@/app/helpers/scroll";
 import css from "./Header.module.scss";
 
@@ -19,6 +20,10 @@ export const Header = () => {
   useEffect(() => {
     toggleScroll(isMenuOpen);
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    onHeaderChange(setScroll);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", onWindowScroll);

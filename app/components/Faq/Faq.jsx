@@ -6,6 +6,7 @@ import { Title } from "../Common/Title/Title";
 import MinusIcon from "@/public/icons/minus.svg";
 import PlusIcon from "@/public/icons/plus.svg";
 import faq from "@/app/data/faq.json";
+import { scrollToSection } from "@/app/helpers/scroll";
 import css from "./Faq.module.scss";
 
 export const Faq = () => {
@@ -44,9 +45,16 @@ export const Faq = () => {
         <p className={css.contact_text}>
           Didn`t find the answer to your question?
         </p>
-        <a href="#contacts" className={css.contact_btn}>
+        <button
+          type="button"
+          className={css.contact_btn}
+          onClick={() => {
+            scrollToSection("#Contact");
+            localStorage.setItem("menu", "Contact");
+          }}
+        >
           Contact Us
-        </a>
+        </button>
       </Container>
     </section>
   );

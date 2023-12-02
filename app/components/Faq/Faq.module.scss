@@ -52,6 +52,7 @@
   height: 39px;
   padding: 10px 16px;
   margin: 0 auto;
+  border: none;
   border-radius: 500px;
   background-color: $accent;
   color: #173d33;
@@ -60,9 +61,11 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+  text-align: left;
 
   position: relative;
   transition: 300ms linear;
+  cursor: pointer;
 
   &::after {
     content: "";

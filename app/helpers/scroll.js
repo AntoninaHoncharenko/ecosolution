@@ -19,7 +19,7 @@ export const onWindowScroll = () => {
     const sectionTop = rect.top + window.scrollY;
 
     if (
-      sectionTop - window.scrollY <= 112 &&
+      sectionTop - window.scrollY <= 110 &&
       sectionTop + rect.height > window.scrollY
     ) {
       currentSectionId = section.id;
@@ -27,9 +27,18 @@ export const onWindowScroll = () => {
   });
 
   localStorage.setItem("menu", currentSectionId || "Main");
+};
 
-  const scrolledDown = window.scrollY > 80;
-  setScroll(scrolledDown);
+export const onHeaderChange = (setState) => {
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  });
 };
 
 export const scrollToSection = (sectionId) => {
