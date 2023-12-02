@@ -5,7 +5,7 @@ import css from "./Main.module.scss";
 
 export const MainSection = () => {
   return (
-    <section className={css.section} id="main">
+    <section className={css.section} id="Main">
       <Container>
         <div className={css.wrap}>
           <Title isMainTitle className={css.title}>

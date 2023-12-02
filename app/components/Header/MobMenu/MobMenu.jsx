@@ -1,11 +1,20 @@
-import Link from "next/link";
 import CloseIcon from "@/public/icons/close.svg";
 import ArrowIcon from "@/public/icons/arrow-right.svg";
 import InstagramIcon from "@/public/icons/instagram.svg";
 import FacebookIcon from "@/public/icons/facebook.svg";
+import { scrollToSection } from "@/app/helpers/scroll";
 import css from "./MobMenu.module.scss";
 
 export const MobMenu = ({ setIsMenuOpen }) => {
+  const menuItem = ["Main", "About", "Cases", "FAQ", "Contact"];
+  const menu = localStorage.getItem("menu");
+
+  const handleMenuClick = (item) => {
+    setIsMenuOpen(false);
+    scrollToSection(`#${item}`);
+    localStorage.setItem("menu", item);
+  };
+
   return (
     <div className={css.backdrop}>
       <div className={css.menu}>
@@ -19,26 +28,26 @@ export const MobMenu = ({ setIsMenuOpen }) => {
         </button>
         <nav className={css.nav}>
           <ul>
-            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
-              <p className={css.item_text}>Main</p>
-              <ArrowIcon width={16} height={16} className={css.item_icon} />
-            </li>
-            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
-              <p className={css.item_text}>About</p>
-              <ArrowIcon width={16} height={16} className={css.item_icon} />
-            </li>
-            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
-              <p className={css.item_text}>Cases</p>
-              <ArrowIcon width={16} height={16} className={css.item_icon} />
-            </li>
-            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
-              <p className={css.item_text}>FAQ</p>
-              <ArrowIcon width={16} height={16} className={css.item_icon} />
-            </li>
-            <li className={css.menu_item} onClick={() => setIsMenuOpen(false)}>
-              <p className={css.item_text}>Contact Us</p>
-              <ArrowIcon width={16} height={16} className={css.item_icon} />
-            </li>
+            {menuItem.map((item) => (
+              <li
+                key={item}
+                className={css.menu_item}
+                onClick={() => handleMenuClick(item)}
+              >
+                <p
+                  className={css.item_text}
+                  style={{ color: item === menu && "#97d28b" }}
+                >
+                  {item === "Contact" ? "Contact Us" : item}
+                </p>
+                <ArrowIcon
+                  width={16}
+                  height={16}
+                  className={css.item_icon}
+                  style={{ stroke: item === menu && "#97d28b" }}
+                />
+              </li>
+            ))}
           </ul>
         </nav>
         <div className={css.icons_wrap}>

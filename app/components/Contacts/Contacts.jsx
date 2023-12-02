@@ -10,7 +10,7 @@ import css from "./Contacts.module.scss";
 
 export const Contacts = () => {
   return (
-    <section className={css.section} id="contacts">
+    <section className={css.section} id="Contact">
       <Container>
         <Title className={css.title}>Contact us</Title>
         <ul className={css.list}>

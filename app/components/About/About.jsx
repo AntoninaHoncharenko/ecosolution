@@ -7,7 +7,7 @@ import css from "./About.module.scss";
 
 export const About = () => {
   return (
-    <section className={css.section}>
+    <section className={css.section} id="About">
       <Container>
         <p className={css.contacts} style={{ marginBottom: "8px" }}>
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

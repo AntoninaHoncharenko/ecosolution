@@ -8,7 +8,7 @@ import MenuIcon from "@/public/icons/menu.svg";
 import {
   scrollToTop,
   toggleScroll,
-  handleHeaderScroll,
+  onWindowScroll,
 } from "@/app/helpers/scroll";
 import css from "./Header.module.scss";
 
@@ -21,7 +21,10 @@ export const Header = () => {
   }, [isMenuOpen]);
 
   useEffect(() => {
-    handleHeaderScroll(setScroll);
+    window.addEventListener("scroll", onWindowScroll);
+    return () => {
+      window.removeEventListener("scroll", onWindowScroll);
+    };
   }, []);
 
   return (

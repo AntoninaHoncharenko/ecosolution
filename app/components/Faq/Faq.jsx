@@ -20,7 +20,7 @@ export const Faq = () => {
   };
 
   return (
-    <section id="faq">
+    <section id="FAQ" className={css.section}>
       <Container>
         <Title>Frequently Asked Questions</Title>
         <ul className={css.list}>
@@ -28,9 +28,9 @@ export const Faq = () => {
             <li className={css.card} key={question.id}>
               <div className={css.wrap} onClick={() => toggleAnswer(index)}>
                 {activeIndex === index ? (
-                  <MinusIcon width={40} height={16} />
+                  <MinusIcon width={16} height={16} />
                 ) : (
-                  <PlusIcon width={40} height={16} />
+                  <PlusIcon width={16} height={16} />
                 )}
 
                 <h3 className={css.title}>{question.title}</h3>

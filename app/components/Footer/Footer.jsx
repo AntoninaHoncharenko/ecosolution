@@ -14,7 +14,14 @@ export const Footer = () => {
       <Container>
         <div className={css.wrap}>
           <Logo />
-          <button type="button" className={css.up_btn} onClick={scrollToTop}>
+          <button
+            type="button"
+            className={css.up_btn}
+            onClick={() => {
+              scrollToTop();
+              localStorage.setItem("menu", "Main");
+            }}
+          >
             <ArrowIcon width={16} height={16} className={css.up_icon} />
           </button>
         </div>

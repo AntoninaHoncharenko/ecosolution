@@ -5,7 +5,7 @@ import css from "./Cases.module.scss";
 
 export const Cases = () => {
   return (
-    <section id="cases" className={css.section}>
+    <section id="Cases" className={css.section}>
       <Container>
         <Title className={css.title}>Successful cases of our company</Title>
         <Slider />
