@@ -1,20 +1,25 @@
 @import "/app/variables.scss";
 
 .section {
-  padding-top: 24px;
+  padding-top: 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
 }
 
-.contacts {
-  font-size: 16px;
-  letter-spacing: -0.64px;
-  text-align: center;
+.wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
 }
 
-.img_wrap {
-  min-width: 320px;
-  height: 200px;
-  width: 100%;
-  margin-bottom: 58px;
+.title {
+  @media (min-width: 768px) {
+    width: 272px;
+  }
 }
 
 .text {
@@ -23,16 +28,28 @@
   line-height: normal;
   letter-spacing: -0.64px;
   margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    width: 353px;
+    padding-left: 11px;
+    margin-bottom: 0;
+    border-left: 1px solid $accent;
+  }
 }
 
 // values
 
 .value_list {
   width: 100%;
-  margin: 0 auto 36px;
+  margin-bottom: 36px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 100px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .value_card {
@@ -43,7 +60,7 @@
   background-color: $background_grey;
 }
 
-.wrap {
+.value_wrap {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -57,10 +74,36 @@
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .value_text {
   text-align: justify;
   line-height: normal;
   letter-spacing: -0.56px;
+}
+
+.img_wrap1 {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    height: 197px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+}
+
+.img_wrap2 {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    height: 197px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }

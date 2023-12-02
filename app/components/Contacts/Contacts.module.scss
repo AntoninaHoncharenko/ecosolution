@@ -1,11 +1,23 @@
 @import "/app/variables.scss";
 
 .section {
-  padding-top: 36px;
+  padding: 36px 0;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
 }
 
 .title {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .list {

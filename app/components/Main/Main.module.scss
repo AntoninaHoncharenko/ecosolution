@@ -2,15 +2,38 @@
 
 .section {
   padding-top: 110px;
+
+  @media (min-width: 768px) {
+    padding-top: 128px;
+  }
 }
 
 .wrap {
   padding-bottom: 24px;
   border-bottom: 1px solid $accent;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .title {
   font-size: 36px;
+
+  @media (min-width: 768px) {
+    width: 300px;
+    font-size: 48px;
+  }
+}
+
+.content_wrap {
+  @media (min-width: 768px) {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .text {
@@ -47,6 +70,10 @@
     border: 1px solid $main_dark;
     color: $accent;
   }
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .icon_wrap {
@@ -59,4 +86,60 @@
 
 .icon {
   stroke: $main_dark;
+}
+
+.contact_wrap {
+  margin: 24px 0 36px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 36px;
+  }
+}
+
+.adress {
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.contact_wrap_add {
+  @media (min-width: 768px) {
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.email {
+  font-size: 16px;
+  letter-spacing: -0.64px;
+  text-align: center;
+}
+
+.rights {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+    font-size: 16px;
+    letter-spacing: -0.64px;
+    text-align: center;
+  }
+}
+
+.img_wrap {
+  min-width: 320px;
+  height: 200px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    height: 348px;
+  }
 }

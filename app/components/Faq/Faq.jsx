@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { Container } from "../Common/Container/Container";
 import { Title } from "../Common/Title/Title";
+import { ContactBtn } from "../Common/ContactBtn/ContactBtn";
 import MinusIcon from "@/public/icons/minus.svg";
 import PlusIcon from "@/public/icons/plus.svg";
 import faq from "@/app/data/faq.json";
-import { scrollToSection } from "@/app/helpers/scroll";
 import css from "./Faq.module.scss";
 
 export const Faq = () => {
@@ -22,8 +22,8 @@ export const Faq = () => {
 
   return (
     <section id="FAQ" className={css.section}>
-      <Container>
-        <Title>Frequently Asked Questions</Title>
+      <Container className={css.container}>
+        <Title className={css.mob_title}>Frequently Asked Questions</Title>
         <ul className={css.list}>
           {faq.map((question, index) => (
             <li className={css.card} key={question.id}>
@@ -34,7 +34,7 @@ export const Faq = () => {
                   <PlusIcon width={16} height={16} />
                 )}
 
-                <h3 className={css.title}>{question.title}</h3>
+                <h3 className={css.question_title}>{question.title}</h3>
               </div>
               {activeIndex === index && (
                 <p className={css.text}>{question.text}</p>
@@ -42,19 +42,15 @@ export const Faq = () => {
             </li>
           ))}
         </ul>
-        <p className={css.contact_text}>
-          Didn`t find the answer to your question?
-        </p>
-        <button
-          type="button"
-          className={css.contact_btn}
-          onClick={() => {
-            scrollToSection("#Contact");
-            localStorage.setItem("menu", "Contact");
-          }}
-        >
-          Contact Us
-        </button>
+        <div className={css.title_wrap}>
+          <Title className={css.desk_title}>Frequently Asked Questions</Title>
+          <div>
+            <p className={css.contact_text}>
+              Didn`t find the answer to your question?
+            </p>
+            <ContactBtn className={css.contact_btn}>Contact Us</ContactBtn>
+          </div>
+        </div>
       </Container>
     </section>
   );

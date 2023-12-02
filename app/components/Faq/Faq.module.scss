@@ -2,15 +2,52 @@
 
 .section {
   padding-top: 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.mob_title {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.desk_title {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .list {
   margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    width: 342px;
+    padding-top: 7px;
+    margin-bottom: 0;
+  }
 }
 
 .card {
   padding: 16px 0;
   border-top: 1px solid $accent;
+
+  @media (min-width: 768px) {
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .wrap {
@@ -20,7 +57,7 @@
   cursor: pointer;
 }
 
-.title {
+.question_title {
   text-align: justify;
   font-size: 18px;
   font-weight: 400;
@@ -44,47 +81,26 @@
   line-height: normal;
   letter-spacing: -0.72px;
   margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .contact_btn {
-  display: block;
   width: 130px;
-  height: 39px;
-  padding: 10px 16px;
   margin: 0 auto;
-  border: none;
-  border-radius: 500px;
-  background-color: $accent;
-  color: #173d33;
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-  text-align: left;
-
-  position: relative;
-  transition: 300ms linear;
-  cursor: pointer;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    width: 14px;
-    height: 14px;
-    background-color: $main_dark;
-    border-radius: 50%;
-    transition: background-color 300ms linear;
+  @media (min-width: 768px) {
+    margin-left: 85px;
   }
+}
 
-  &:hover {
-    background-color: $main_dark;
-    color: $accent;
-
-    &::after {
-      background-color: $accent;
-    }
+.title_wrap {
+  @media (min-width: 768px) {
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

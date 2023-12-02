@@ -14,18 +14,28 @@ export const Footer = () => {
       <Container>
         <div className={css.wrap}>
           <Logo />
-          <button
-            type="button"
-            className={css.up_btn}
-            onClick={() => {
-              scrollToTop();
-              localStorage.setItem("menu", "Main");
-            }}
-          >
-            <ArrowIcon width={16} height={16} className={css.up_icon} />
-          </button>
+          <div className={css.button_wrap}>
+            <div className={css.desk_icon_wrap}>
+              <a href="https://www.facebook.com/" target="_blank">
+                <FacebookIcon width={24} height={24} className={css.icon} />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <InstagramIcon width={24} height={24} className={css.icon} />
+              </a>
+            </div>
+            <button
+              type="button"
+              className={css.up_btn}
+              onClick={() => {
+                scrollToTop();
+                localStorage.setItem("menu", "Main");
+              }}
+            >
+              <ArrowIcon width={16} height={16} className={css.up_icon} />
+            </button>
+          </div>
         </div>
-        <div className={css.icon_wrap}>
+        <div className={css.mob_icon_wrap}>
           <a href="https://www.facebook.com/" target="_blank">
             <FacebookIcon width={24} height={24} className={css.icon} />
           </a>
@@ -33,15 +43,17 @@ export const Footer = () => {
             <InstagramIcon width={24} height={24} className={css.icon} />
           </a>
         </div>
-        <address>
+        <address className={css.address}>
           <p className={css.content}>
             79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
           </p>
-          <p className={css.content}>office@ecosolution.com</p>
+          <div className={css.content_wrap}>
+            <p className={css.content}>office@ecosolution.com</p>
+            <p className={css.content} style={{ marginBottom: "0px" }}>
+              ecosolution © 2023
+            </p>
+          </div>
         </address>
-        <p className={css.content} style={{ marginBottom: "0px" }}>
-          ecosolution © 2023
-        </p>
       </Container>
     </footer>
   );

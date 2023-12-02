@@ -1,10 +1,16 @@
 @import "/app/variables.scss";
 
 .title {
+  width: 286px;
   text-align: center;
   display: block;
   position: relative;
-  margin-bottom: 96px;
+  margin: 0 auto 96px;
+
+  @media (min-width: 768px) {
+    width: 370px;
+    margin-bottom: 135px;
+  }
 
   &::after {
     content: "";
@@ -14,6 +20,11 @@
     width: 1px;
     height: 48px;
     background-color: $accent;
+
+    @media (min-width: 768px) {
+      top: 96px;
+      height: 87px;
+    }
   }
 }
 
@@ -23,15 +34,23 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 560px;
+  }
 }
 
 .number {
   font-family: var(--font-oswald);
   font-size: 48px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1;
   text-transform: uppercase;
   color: $accent;
+
+  @media (min-width: 768px) {
+    font-size: 100px;
+  }
 }
 
 .span {
@@ -39,4 +58,9 @@
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.7;
+  }
 }

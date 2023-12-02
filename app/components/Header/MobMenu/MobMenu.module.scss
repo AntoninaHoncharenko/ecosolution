@@ -17,15 +17,15 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: 480px) {
-    width: 320px;
-    margin-left: auto;
-  }
-
   padding: 56px 24px 24px 24px;
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
+
+  @media (min-width: 480px) {
+    width: 320px;
+    margin-left: auto;
+  }
 }
 
 .close_btn {

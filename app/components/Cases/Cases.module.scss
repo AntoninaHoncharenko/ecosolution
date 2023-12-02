@@ -2,8 +2,20 @@
 
 .section {
   padding-top: 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+  }
+}
+
+.container {
+  position: relative;
 }
 
 .title {
   width: 264px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+  }
 }

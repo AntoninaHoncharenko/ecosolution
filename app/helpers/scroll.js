@@ -19,7 +19,7 @@ export const onWindowScroll = () => {
     const sectionTop = rect.top + window.scrollY;
 
     if (
-      sectionTop - window.scrollY <= 110 &&
+      sectionTop - window.scrollY <= 112 &&
       sectionTop + rect.height > window.scrollY
     ) {
       currentSectionId = section.id;
@@ -42,12 +42,12 @@ export const onHeaderChange = (setState) => {
 };
 
 export const scrollToSection = (sectionId) => {
-  const isMobile = window.innerWidth < 768;
-  const headerHeight = isMobile ? 112 : 88;
+  // const isMobile = window.innerWidth < 768;
+  // const headerHeight = isMobile ? 110 : 110;
   const section = document.querySelector(sectionId);
 
   if (section) {
-    const sectionTop = section.offsetTop - headerHeight;
+    const sectionTop = section.offsetTop - 110;
     window.scrollTo({
       top: sectionTop,
       behavior: "smooth",

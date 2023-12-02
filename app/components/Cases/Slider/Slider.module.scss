@@ -10,6 +10,14 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: 768px) {
+    width: 353px;
+    padding-left: 9px;
+    border-left: 1px solid $accent;
+
+    left: 50%;
+  }
 }
 
 .count {

@@ -1,14 +1,32 @@
 @import "/app/variables.scss";
 
 .footer {
-  padding: 24px 0;
+  padding-bottom: 24px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 40px;
+  }
 }
 
 .wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 24px;
   margin-bottom: 24px;
+  border-top: 1px solid $accent;
+
+  @media (min-width: 768px) {
+    padding-top: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.button_wrap {
+  width: 342px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .up_btn {
@@ -36,15 +54,42 @@
   transition: stroke 300ms linear;
 }
 
-.icon_wrap {
+.mob_icon_wrap {
   display: flex;
   width: 56px;
   justify-content: space-between;
   margin: 0 auto 24px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.desk_icon_wrap {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 56px;
+    justify-content: space-between;
+  }
 }
 
 .icon {
   stroke: $main_dark;
+}
+
+.address {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content_wrap {
+  width: 342px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {
@@ -55,4 +100,8 @@
   letter-spacing: -0.64px;
   text-align: center;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
