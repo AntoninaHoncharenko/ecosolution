@@ -3,14 +3,14 @@ import CircleIcon from "@/public/icons/circle.svg";
 import WorldIcon from "@/public/icons/world.svg";
 import ChargeIcon from "@/public/icons/charge.svg";
 import RankIcon from "@/public/icons/ranking.svg";
-import css from "./About.module.scss";
+import css from "./Values.module.scss";
 
 export const ValuesList = () => {
   return (
     <ul className={css.value_list}>
       <li className={css.value_card}>
         <div className={css.value_wrap}>
-          <CircleIcon width={16} height={16} />
+          <CircleIcon width={16} height={16} className={css.icon} />
           <h3 className={css.value_title}>Openness</h3>
         </div>
         <p className={css.value_text}>
@@ -19,7 +19,7 @@ export const ValuesList = () => {
       </li>
       <li className={css.value_card}>
         <div className={css.value_wrap}>
-          <WorldIcon width={16} height={16} />
+          <WorldIcon width={16} height={16} className={css.icon} />
           <h3 className={css.value_title}>Responsibility</h3>
         </div>
         <p className={css.value_text}>
@@ -51,7 +51,7 @@ export const ValuesList = () => {
       </li>
       <li className={css.value_card}>
         <div className={css.value_wrap}>
-          <ChargeIcon width={16} height={16} />
+          <ChargeIcon width={16} height={16} className={css.icon} />
           <h3 className={css.value_title}>Innovation</h3>
         </div>
         <p className={css.value_text}>
@@ -60,7 +60,7 @@ export const ValuesList = () => {
       </li>
       <li className={css.value_card}>
         <div className={css.value_wrap}>
-          <RankIcon width={16} height={16} />
+          <RankIcon width={16} height={16} className={css.icon} />
           <h3 className={css.value_title}>Quality</h3>
         </div>
         <p className={css.value_text}>

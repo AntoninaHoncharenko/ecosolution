@@ -19,6 +19,10 @@ export const CaseCard = ({ onecase }) => {
       <div className={css.wrap}>
         <div className={css.title_wrap}>
           <h3 className={css.title}>{onecase.full_title}</h3>
+          <div>
+            <h3 className={css.desk_title}>{onecase.city}</h3>
+            <h3 className={css.desk_title}>{onecase.name}</h3>
+          </div>
           <button type="button" className={css.button}>
             <ArrowIcon width={28} height={28} className={css.icon} />
           </button>

@@ -1,6 +1,6 @@
 import { Container } from "../Common/Container/Container";
 import { Title } from "../Common/Title/Title";
-import { ValuesList } from "./ValuesList";
+import { ValuesList } from "../Values/ValuesList";
 import { Electricity } from "../Electricity/Electricity";
 import css from "./About.module.scss";
 

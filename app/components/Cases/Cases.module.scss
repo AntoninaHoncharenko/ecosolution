@@ -6,6 +6,10 @@
   @media (min-width: 768px) {
     padding-top: 100px;
   }
+
+  @media (min-width: 1280px) {
+    padding-top: 120px;
+  }
 }
 
 .container {
@@ -17,5 +21,9 @@
 
   @media (min-width: 768px) {
     position: absolute;
+  }
+
+  @media (min-width: 1280px) {
+    width: 398px;
   }
 }

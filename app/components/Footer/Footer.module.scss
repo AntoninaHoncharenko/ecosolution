@@ -23,10 +23,12 @@
 }
 
 .button_wrap {
-  width: 342px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: 768px) {
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .up_btn {
@@ -87,9 +89,11 @@
 }
 
 .content_wrap {
-  width: 342px;
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: 768px) {
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .content {

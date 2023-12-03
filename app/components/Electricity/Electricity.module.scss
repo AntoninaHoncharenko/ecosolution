@@ -12,6 +12,11 @@
     margin-bottom: 135px;
   }
 
+  @media (min-width: 1280px) {
+    width: 491px;
+    margin-bottom: 120px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -24,6 +29,10 @@
     @media (min-width: 768px) {
       top: 96px;
       height: 87px;
+    }
+
+    @media (min-width: 1280px) {
+      top: 115px;
     }
   }
 }
@@ -38,6 +47,10 @@
   @media (min-width: 768px) {
     width: 560px;
   }
+
+  @media (min-width: 1280px) {
+    width: 920px;
+  }
 }
 
 .number {
@@ -51,6 +64,10 @@
   @media (min-width: 768px) {
     font-size: 100px;
   }
+
+  @media (min-width: 1280px) {
+    font-size: 164px;
+  }
 }
 
 .span {
@@ -62,5 +79,9 @@
   @media (min-width: 768px) {
     font-size: 28px;
     line-height: 1.7;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 48px;
   }
 }

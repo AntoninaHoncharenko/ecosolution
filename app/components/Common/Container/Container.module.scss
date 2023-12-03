@@ -12,6 +12,11 @@
     padding: 0 30px;
   }
 
+  @media (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 70px;
+  }
+
   @media (min-width: 1440px) {
     width: 1440px;
     padding: 0 100px;
