@@ -1,6 +1,7 @@
 "use client";
 
 import { Formik, Form, Field } from "formik";
+import toast from "react-hot-toast";
 import { validationSchema } from "@/app/helpers/validation";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import css from "./ContactForm.module.scss";
@@ -13,11 +14,19 @@ export const ContactForm = () => (
       email: "",
     }}
     validationSchema={validationSchema}
-    onSubmit={(values) => {
-      console.log(values);
+    onSubmit={(values, { resetForm }) => {
+      toast.success("Successfully sent!");
+      resetForm({
+        values: {
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        },
+      });
     }}
   >
-    {({ errors, touched }) => (
+    {({ errors }) => (
       <Form className={css.form}>
         <div className={css.wrap}>
           <label htmlFor="name" className={css.label}>

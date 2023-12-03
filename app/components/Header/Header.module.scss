@@ -29,7 +29,8 @@
   cursor: pointer;
   transition: background-color 300ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $accent;
   }
 }

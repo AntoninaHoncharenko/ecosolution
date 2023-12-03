@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import LogoIcon from "@/public/icons/logo.svg";
 import css from "./Logo.module.scss";
 
@@ -18,4 +19,8 @@ export const Logo = ({ scrollToTop }) => {
       </p>
     </button>
   );
+};
+
+Logo.propTypes = {
+  scrollToTop: PropTypes.func,
 };

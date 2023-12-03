@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { scrollToSection } from "@/app/helpers/scroll";
 import css from "./ContactBtn.module.scss";
 
@@ -14,4 +15,9 @@ export const ContactBtn = ({ children, className }) => {
       {children}
     </button>
   );
+};
+
+ContactBtn.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };

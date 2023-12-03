@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Header } from "./components/Header/Header";
 import { MainSection } from "./components/Main/Main";
 import { About } from "./components/About/About";
@@ -18,6 +19,7 @@ export default function Home() {
         <Contacts />
         <Footer />
       </main>
+      <Toaster />
     </>
   );
 }

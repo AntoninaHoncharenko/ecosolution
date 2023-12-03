@@ -11,7 +11,7 @@ const oswald = Oswald({
 const fira = Fira_Sans({
   subsets: ["latin"],
   variable: "--font-fira",
-  weight: ["400", "500"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const gothic = localFont({

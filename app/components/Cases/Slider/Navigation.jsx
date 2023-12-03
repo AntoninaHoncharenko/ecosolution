@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useSwiper } from "swiper/react";
 import ArrowIcon from "@/public/icons/arrow.svg";
 import css from "./Slider.module.scss";
@@ -34,3 +35,7 @@ export default function SlideNextButton({ count }) {
     </div>
   );
 }
+
+SlideNextButton.propTypes = {
+  count: PropTypes.number.isRequired,
+};

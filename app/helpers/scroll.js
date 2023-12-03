@@ -11,7 +11,7 @@ export const toggleScroll = (condition) => {
 };
 
 export const onWindowScroll = () => {
-  const sections = document.querySelectorAll("section"); // або виберіть конкретні секції
+  const sections = document.querySelectorAll("section");
   let currentSectionId = "";
 
   sections.forEach((section) => {
@@ -42,8 +42,6 @@ export const onHeaderChange = (setState) => {
 };
 
 export const scrollToSection = (sectionId) => {
-  // const isMobile = window.innerWidth < 768;
-  // const headerHeight = isMobile ? 110 : 110;
   const section = document.querySelector(sectionId);
 
   if (section) {

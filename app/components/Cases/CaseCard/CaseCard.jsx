@@ -1,10 +1,11 @@
+import PropTypes from "prop-types";
 import Image from "next/image";
 import ArrowIcon from "@/public/icons/arrow-right.svg";
 import css from "./CaseCard.module.scss";
 
 export const CaseCard = ({ onecase }) => {
   return (
-    <>
+    <div className={css.card}>
       <div className={css.img_wrap}>
         <Image
           src={onecase.image}
@@ -32,6 +33,18 @@ export const CaseCard = ({ onecase }) => {
           <p className={css.text}>{onecase.date}</p>
         </div>
       </div>
-    </>
+    </div>
   );
+};
+
+CaseCard.propTypes = {
+  onecase: PropTypes.shape({
+    id: PropTypes.string,
+    city: PropTypes.string,
+    name: PropTypes.string,
+    full_title: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
 };

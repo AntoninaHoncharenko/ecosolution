@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Title } from "../Common/Title/Title";
 import css from "./Electricity.module.scss";
 

@@ -52,9 +52,12 @@
 .text {
   text-align: justify;
   font-size: 16px;
-  line-height: normal;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.62px;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    letter-spacing: -0.64px;
+  }
 
   @media (min-width: 1280px) {
     width: 363px;
@@ -82,7 +85,8 @@
 
   transition: 300ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $main_dark;
     border: 1px solid $main_dark;
     color: $accent;

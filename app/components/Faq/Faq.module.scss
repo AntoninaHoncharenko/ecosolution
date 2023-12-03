@@ -79,13 +79,16 @@
   gap: 8px;
   align-items: center;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .question_title {
   text-align: justify;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.72px;
 
   @media (min-width: 1280px) {
@@ -97,22 +100,23 @@
 .text {
   text-align: justify;
   font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.56px;
   margin: 16px 0 0 24px;
+
+  @media (min-width: 768px) {
+    margin-left: 44px;
+  }
 
   @media (min-width: 1280px) {
     font-size: 16px;
     letter-spacing: -0.64px;
+    margin-left: 52px;
   }
 }
 
 .contact_text {
   text-align: center;
   font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.72px;
   margin-bottom: 12px;
 
@@ -154,5 +158,15 @@
 
   @media (min-width: 1440px) {
     width: 596px;
+  }
+}
+
+.icon {
+  width: 36px;
+  height: 16px;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 28px;
   }
 }

@@ -29,6 +29,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: 1280px) {
+    width: 459px;
+  }
 }
 
 .up_btn {
@@ -41,7 +45,8 @@
   transition: background-color 300ms linear;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $main_dark;
 
     .up_icon {
@@ -77,8 +82,34 @@
   }
 }
 
-.icon {
+.icon_fb {
   stroke: $main_dark;
+  transition: 300ms linear;
+
+  path:first-child {
+    fill: $main_dark;
+    transition: 300ms linear;
+  }
+
+  &:hover,
+  &:focus {
+    stroke: $accent;
+  }
+
+  &:hover path:first-child,
+  &:focus path:first-child {
+    fill: $accent;
+  }
+}
+
+.icon_inst {
+  stroke: $main_dark;
+  transition: 300ms linear;
+
+  &:hover,
+  &:focus {
+    stroke: $accent;
+  }
 }
 
 .address {
@@ -94,13 +125,15 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: 1280px) {
+    width: 459px;
+  }
 }
 
 .content {
   font-size: 16px;
-  font-weight: 400;
   font-style: normal;
-  line-height: normal;
   letter-spacing: -0.64px;
   text-align: center;
   margin-bottom: 16px;

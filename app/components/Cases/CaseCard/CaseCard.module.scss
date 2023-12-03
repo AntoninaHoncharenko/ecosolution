@@ -1,5 +1,9 @@
 @import "/app/variables.scss";
 
+// .card {
+//   height: 100%;
+// }
+
 .img_wrap {
   width: 100%;
   height: 168px;
@@ -20,7 +24,7 @@
 }
 
 .title_wrap {
-  height: 94px;
+  // height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -38,7 +42,6 @@
   text-align: justify;
   font-size: 18px;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.72px;
   width: 175px;
 
@@ -68,6 +71,7 @@
   width: 60px;
   height: 60px;
   padding: 16px;
+  margin-left: 12px;
   border-radius: 100px;
   background-color: $accent;
   border: none;
@@ -75,7 +79,8 @@
   transition: background-color 300ms linear;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $main_dark;
 
     .icon {
@@ -97,12 +102,11 @@
 
 .text {
   font-size: 12px;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.48px;
 
   @media (min-width: 768px) {
     font-size: 14px;
+    letter-spacing: -0.56px;
   }
 
   @media (min-width: 1280px) {

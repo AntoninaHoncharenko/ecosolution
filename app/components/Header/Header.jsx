@@ -54,7 +54,9 @@ export const Header = () => {
           </div>
         </Container>
       </header>
-      {isMenuOpen && <MobMenu setIsMenuOpen={setIsMenuOpen} />}
+      {isMenuOpen && (
+        <MobMenu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      )}
     </>
   );
 };

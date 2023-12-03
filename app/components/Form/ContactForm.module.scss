@@ -10,6 +10,15 @@
   @media (min-width: 768px) {
     width: 342px;
   }
+
+  @media (min-width: 1280px) {
+    width: 546px;
+    padding: 48px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 596px;
+  }
 }
 
 .wrap {
@@ -22,8 +31,6 @@
 
 .label {
   font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: -0.64px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -41,10 +48,20 @@
   font-size: 18px;
   letter-spacing: -0.72px;
 
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+
   &::placeholder {
     color: #bdbdbd;
     font-size: 18px;
     letter-spacing: -0.72px;
+
+    @media (min-width: 1280px) {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
   }
 }
 
@@ -63,10 +80,20 @@
   font-size: 18px;
   letter-spacing: -0.72px;
 
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+
   &::placeholder {
     color: #bdbdbd;
     font-size: 18px;
     letter-spacing: -0.72px;
+
+    @media (min-width: 1280px) {
+      font-size: 20px;
+      letter-spacing: -0.8px;
+    }
   }
 }
 
@@ -89,7 +116,8 @@
 
   transition: 300ms linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $main_dark;
     border: 1px solid $main_dark;
     color: $accent;

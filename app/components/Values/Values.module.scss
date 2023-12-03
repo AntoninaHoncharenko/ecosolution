@@ -61,6 +61,7 @@
 
   @media (min-width: 768px) {
     font-size: 18px;
+    line-height: 1.33;
   }
 
   @media (min-width: 1280px) {
@@ -70,7 +71,6 @@
 
 .value_text {
   text-align: justify;
-  line-height: normal;
   letter-spacing: -0.56px;
   font-weight: 400;
   font-size: 14px;

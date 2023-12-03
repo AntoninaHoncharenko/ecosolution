@@ -17,10 +17,14 @@ export const Footer = () => {
           <div className={css.button_wrap}>
             <div className={css.desk_icon_wrap}>
               <a href="https://www.facebook.com/" target="_blank">
-                <FacebookIcon width={24} height={24} className={css.icon} />
+                <FacebookIcon width={24} height={24} className={css.icon_fb} />
               </a>
               <a href="https://www.instagram.com/" target="_blank">
-                <InstagramIcon width={24} height={24} className={css.icon} />
+                <InstagramIcon
+                  width={24}
+                  height={24}
+                  className={css.icon_inst}
+                />
               </a>
             </div>
             <button
@@ -37,10 +41,10 @@ export const Footer = () => {
         </div>
         <div className={css.mob_icon_wrap}>
           <a href="https://www.facebook.com/" target="_blank">
-            <FacebookIcon width={24} height={24} className={css.icon} />
+            <FacebookIcon width={24} height={24} className={css.icon_fb} />
           </a>
           <a href="https://www.instagram.com/" target="_blank">
-            <InstagramIcon width={24} height={24} className={css.icon} />
+            <InstagramIcon width={24} height={24} className={css.icon_inst} />
           </a>
         </div>
         <address className={css.address}>

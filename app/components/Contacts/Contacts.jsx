@@ -50,7 +50,7 @@ export const Contacts = () => {
                 className={css.link}
               >
                 <MapIcon width={24} height={24} className={css.icon} />
-                <p className={css.content} style={{ width: "212px" }}>
+                <p className={css.adress}>
                   79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
                 </p>
               </a>

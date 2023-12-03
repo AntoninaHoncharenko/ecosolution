@@ -29,9 +29,9 @@ export const Faq = () => {
             <li className={css.card} key={question.id}>
               <div className={css.wrap} onClick={() => toggleAnswer(index)}>
                 {activeIndex === index ? (
-                  <MinusIcon width={16} height={16} />
+                  <MinusIcon className={css.icon} />
                 ) : (
-                  <PlusIcon width={16} height={16} />
+                  <PlusIcon className={css.icon} />
                 )}
 
                 <h3 className={css.question_title}>{question.title}</h3>
