@@ -30,10 +30,10 @@ export const ValuesList = () => {
       <li className={css.img_wrap1}>
         <Image
           src="/images/1value2x.jpg"
-          width={320}
-          height={200}
+          width={596}
+          height={339}
           alt="windmill"
-          sizes="(max-width: 768px) 100%, 320px"
+          srcSet="/images/1value1x.jpg 1x, /images/1value2x.jpg 2x"
           loading="lazy"
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
@@ -41,10 +41,10 @@ export const ValuesList = () => {
       <li className={css.img_wrap2}>
         <Image
           src="/images/2value2x.jpg"
-          width={342}
-          height={197}
+          width={596}
+          height={339}
           alt="windmill"
-          sizes="(max-width: 768px) 100%, 342px"
+          srcSet="/images/2value1x.jpg 1x, /images/2value2x.jpg 2x"
           loading="lazy"
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />

@@ -6,7 +6,7 @@
     "full_title": "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”",
     "type": "Wind Power for auto field irrigation",
     "date": "July 2023",
-    "image": "/images/case1.jpg"
+    "images": ["/images/1case2x.jpg", "/images/1case1x.jpg"]
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "full_title": "Zhytomyr city Private Enterprise “Bosch”",
     "type": "Solar Panels for industrial use",
     "date": "November 2023",
-    "image": "/images/case2.jpg"
+    "images": ["/images/2case2x.jpg", "/images/2case1x.jpg"]
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "full_title": "Rivne city Private Enterprise “Biotech”",
     "type": "Thermal modules",
     "date": "October 2023",
-    "image": "/images/case3.jpg"
+    "images": ["/images/3case2x.jpg", "/images/3case1x.jpg"]
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "full_title": "Kherson city Enterprise “HealthyFarm”",
     "type": "Wind power",
     "date": "September 2021",
-    "image": "/images/case4.jpg"
+    "images": ["/images/4case2x.jpg", "/images/4case1x.jpg"]
   },
   {
     "id": "5",
@@ -42,6 +42,6 @@
     "full_title": "Zaporizhia city Private Enterprise “Biotech",
     "type": "Mini nuclear stations",
     "date": "May 2021",
-    "image": "/images/case5.jpg"
+    "images": ["/images/5case2x.jpg", "/images/5case1x.jpg"]
   }
 ]

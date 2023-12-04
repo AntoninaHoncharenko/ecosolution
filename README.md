@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ecosolution website - Next.js App
 
-## Getting Started
+This is an Ecosolution website created using Next.js, the React Framework for the Web.
+The site introduces company to users, showes information about the company's activities, advantages, successful cases.
 
-First, run the development server:
+## Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To use the application, you can follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository to your local computer.
+2. Install the required dependencies by running the command npm install.
+3. Start the development server using the command npm run dev.
+4. Open the application in your browser at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+In the project directory, you can run:
 
-## Learn More
+### "npm run dev"
 
-To learn more about Next.js, take a look at the following resources:
+Runs the app in development mode. Open http://localhost:3000 to view it in the
+browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### "npm run build"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Builds the app for production to the build folder.
 
-## Deploy on Vercel
+### "npm run lint"
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Lints the src directory using ESLint. It reports unused-disable-directives and
+enforces a maximum number of warnings of 0.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technologies
+
+The Ecosolution website is built using the Next.js and additional libraries (Formik, Yup, Swiper, React-hot-toast). Stylization is done using SASS modules.

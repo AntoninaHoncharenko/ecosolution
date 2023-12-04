@@ -5,15 +5,15 @@ import css from "./CaseCard.module.scss";
 
 export const CaseCard = ({ onecase }) => {
   return (
-    <div className={css.card}>
+    <div>
       <div className={css.img_wrap}>
         <Image
-          src={onecase.image}
-          width={320}
-          height={168}
+          src={onecase.images[0]}
+          width={596}
+          height={296}
           alt="windmill"
-          // sizes="(max-width: 480px) 100%, 320px"
           loading="lazy"
+          srcSet={`${onecase.images[1]} 1x, ${onecase.images[0]} 2x`}
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
       </div>
